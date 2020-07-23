@@ -9,6 +9,7 @@ const input = () => {
     setContent(e.target.value)
   }
 
+  // Did you mean to use a loop here?
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
 tinycolor("#000");

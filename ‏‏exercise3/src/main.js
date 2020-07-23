@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import {useState} from 'react'
 
 const RandomeNamber = () => {
+  // Please separate "state" to multiple fields each with its own role
+  // (as it is easier to re-use compared with one big state object)
     const [state, setState] = useState(
         {...RandomeNamber.initial, randomnum: generateRandom()}
         );

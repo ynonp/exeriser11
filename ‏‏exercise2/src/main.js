@@ -4,10 +4,14 @@ import {useState} from 'react';
 import Convert from './Convert'
 
 const TimeUnits = () => {
+  // We don't really need to save all 3 values in state, right?
+  // Please refactor to save only the seconds
     const [content, setContent] = useState(
         TimeUnits.initial
         );
 
+  // These 3 functions looks awefully similiar
+  // Can you create a more general version of it without code duplication?
     function convertHours(e) {
         const hours = Number(e.target.value)
 
